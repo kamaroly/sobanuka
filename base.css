@@ -1,0 +1,220 @@
+/* RESET */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th,figcaption { font-size: 1em; font-weight: normal; font-style: normal; }
+fieldset,iframe { border: none; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+article,aside,footer,header,hgroup,nav,section,figure,figcaption { display: block; }
+
+/* LAYOUT */
+html { background-color:#fff; }
+
+.clear { clear: both; }
+.clearer { clear: both; display: block; margin: 0; padding: 0; height: 0; line-height: 1px; font-size: 1px; }
+.selfclear { zoom:1; }
+.selfclear:after { content:'.'; display:block; height:0; clear:both; visibility:hidden; }
+
+
+
+#omniture, #top { position: absolute; top: 0; }
+#container { width: 1170px; margin: 0 auto; position: relative; }
+#main { width: 100%; position: relative; }
+#content { padding: 18px 20px; position: relative; color: #333; }
+#breadcrumb { clear: both; text-align: center; margin: 18px auto; clear: both; font-size: 10px; color: #686868; }
+
+.content { background: #fff; border: 1px solid; border-color: #e5e5e5 #dbdbdb #d2d2d2; -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px; box-shadow: rgba(0,0,0,0.3) 0 1px 3px; }
+.content:nth-child(1n) { border: none; } /* reset border for smart browsers */
+
+
+p.last, ul.last, ol.last, li.last { _width: auto !important; _float: none !important; }
+
+
+/* TYPE */
+body { font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif; background-color: transparent; color: #333; -webkit-font-smoothing: antialiased; }
+
+a { color: #08c; }
+a:link, a:visited, a:active { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a.block { display: block; cursor: pointer; }
+a.block span,
+a.block em { color:#08c; cursor: pointer; }
+a.block:hover { text-decoration: none; }
+a.block:hover span,
+a.block:hover em { color: #08c; text-decoration: underline; }
+
+
+strong, b { font-weight: bold; }
+em, i, cite { font-style: italic; }
+sup { padding-left: 1px; font-size: 10px !important; font-weight: normal !important; line-height:1.5; vertical-align: baseline; position: relative; bottom: 0.33em; _position: static !important; }
+sup, sup a { color:#666; }
+sup a:hover { color:#08c; text-decoration:none; }
+sub { line-height:1; }
+abbr { border: 0; }
+.sosumi { font-size: 10px !important; line-height:1.5; color:#888; }
+.sosumi_features { font-size: 10px !important; line-height:1.5; color:#888; }
+
+h1,h2,h3,h4,h5,h6,strong { color:#000; }
+h1,h2,h3,h4 { font-weight: bold; }
+h2,h3,h4 { line-height: 18px; }
+h1,h2 { margin-bottom: 18px; }
+h1 { font-size: 24px; line-height: 36px; }
+h2 { font-size: 16px; }
+h3 { font-size: 1em; }
+h4 { font-size: 10px; }
+p { margin-bottom: 18px; }
+p.intro { color: #888; font-size: 16px; line-height: 22px; font-weight: normal; }
+.more { text-align: right; }
+
+ul { list-style: none outside; }
+ol { margin-bottom: 18px; list-style: decimal; margin-left: 2.2em; }
+ul.square,
+ul.circle,
+ul.disc { margin-left: 2em; margin-bottom: 18px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style:disc outside; }
+ul ul.square,
+ul ul.circle,
+ul ul.disc { margin-top: 4px; margin-bottom: 5px; }
+ol.sosumi { margin-left: 0; padding-left: 2em; *padding-left: 2.2em; }
+
+
+.dot-nav li,
+.dot-nav li a { display:-moz-inline-stack; display:inline-block; *display:inline; *zoom:1; }
+.dot-nav li { position:relative; z-index:1; margin:0; width:13px; height:15px; overflow:hidden; }
+.dot-nav li a { position:absolute; z-index:1; width:13px; height:45px; top:0; left:0; cursor:pointer; text-indent:-1000em; background:url(https://www.apple.com/global/elements/buttons/dots_08c.png) no-repeat 0 0; behavior:url(/global/scripts/lib/ie7pngfix.htc); }
+.dot-nav li a:hover { top:-15px; }
+.dot-nav li a.active { cursor:default; top:-30px; }
+
+.dot-nav:nth-child(1n) li { width:10px; height:10px; padding:0; margin:0 2px; }
+.dot-nav:nth-child(1n) li a { border-radius:5px; width:10px; height:10px; background:#e0e1e3;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .25);
+	   -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .25);
+	        box-shadow:inset 0 1px 1px rgba(0, 0, 0, .25);
+}
+.dot-nav:nth-child(1n) li a:hover { top:0; background:#ccc;}
+.dot-nav:nth-child(1n) li a.active { top:0; background:#08c;
+	background:-webkit-gradient(linear,lefttop,leftbottom,color-stop(0%,rgb(126,198,234)),color-stop(24%,rgb(70,179,234)),color-stop(100%,rgb(3,135,201)));
+	background:-webkit-linear-gradient(top,rgb(126,198,234)0%,rgb(70,179,234)45%,rgb(3,135,201)100%);
+	background:   -moz-linear-gradient(top,rgb(126,198,234)0%,rgb(70,179,234)45%,rgb(3,135,201)100%);
+	background:        linear-gradient(top,rgb(126,198,234)0%,rgb(70,179,234)45%,rgb(3,135,201)100%);
+	-webkit-box-shadow:inset 0 1px 0 rgba(0, 0, 0, .25);
+	   -moz-box-shadow:inset 0 1px 0 rgba(0, 0, 0, .25);
+	        box-shadow:inset 0 1px 0 rgba(0, 0, 0, .25);
+}
+
+.last { margin-bottom: 0; }
+#main .sidebar { font-size: 10px; line-height: 18px; color:#333; }
+#main .callout { font-size: 11px; line-height: 18px; margin-bottom: 18px; }
+
+body.specs #main { font-size: 11px; line-height: 16px; }
+
+/* PIPED LINKS */
+.piped { display: block; zoom: 1; }
+.piped:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.piped li { float: left; display: inline; }
+.piped a { border-left: 1px solid #797c80; padding: 0 0 0 0.75em; margin-left: 0.75em; }
+.piped a.first { border-left: 0 !important; padding-left: 0; margin-left: 0 !important; }
+
+/*--- Global Footer (legacy) ---*/
+
+
+/*--- Global Footer ---*/
+#globalfooter {
+ width: 1170px; 
+ color: #888; font-size: 10px;
+ margin: 18px auto 0;
+ padding-bottom: 36px; 
+ text-align: left !important;
+background: #F2F2F2;
+
+}
+#globalfooter a { color: #08c; }
+#globalfooter p { margin-bottom: 1em; }
+#globalfooter p.gf-buy { float: left; width: 52%; margin: 18px 0 9px 3px; }
+#globalfooter ul.piped a { padding: 0 0 0 1.5em; margin-left: 1.5em; border-left: 1px solid #d0d0d0; }
+#globalfooter .gf-links { float: right; margin: 18px 3px 9px 0; }
+#globalfooter .gf-sosumi { clear: both; width: 100%; border-top: 1px solid #ddd; padding-top: 9px; }
+#globalfooter .gf-sosumi a { padding: 0 10px; }
+#globalfooter .gf-sosumi p { float: left; margin-left: 3px; }
+#globalfooter form { margin: 18px 10px; }
+#globalfooter .search-wrapper { margin: 0 auto; }
+#globalfooter .search-wrapper input.prettysearch { margin-left: 10px; }
+#globalfooter ul.piped a.contact_us { padding-right: 1.5em; border-right: 1px solid #d0d0d0; }
+#globalfooter ul.piped a.choose { margin-left: 0; border: 0; }
+#globalfooter ul.piped a.choose img { vertical-align: middle; margin-top: -5px; *position: relative; }
+
+/*--- Breadcrumbs (legacy) ---*/
+#globalfooter #breadcrumbs { font-size: 11px; color: #444;
+	overflow: hidden; height: 36px; line-height: 34px; font-weight: bold; text-shadow: 0 1px 0 #fff; }
+#globalfooter #breadcrumbs a { color: #444; text-decoration: none; float: left; padding: 0 10px; margin-left: -10px; *position: relative; _cursor: hand; }
+#globalfooter #breadcrumbs a:hover { color: #333; text-decoration: none !important; }
+#globalfooter #breadcrumbs a.home { margin: 0; width: 15px; height: 0; padding-top: 36px; overflow: hidden; }
+#globalfooter #breadcrumbs span { float: left; width: 9px; margin: 0 10px 0 0; height: 0; padding-top: 34px; margin-top: 1px; overflow: hidden; background: 
+	 }
+
+/*--- Breadcrumbs ---*/
+
+#globalfooter ol#breadcrumbs li { float: left; margin: 0; padding: 0 0 0 0px; 
+ }
+#globalfooter ol#breadcrumbs li a { float: left; color: #444; text-decoration: none; padding: 0 10px; margin-left: -10px; }
+#globalfooter ol#breadcrumbs li a:hover { color: #333; text-decoration: none; }
+#globalfooter ol#breadcrumbs li.home { background: none; margin: 0; padding: 0; }
+#globalfooter ol#breadcrumbs li.home a { margin: 0; padding: 0 10px; width: 15px; text-indent: -9999px; overflow: hidden; }
+
+
+
+/*--- BREADORY ---*/
+#breadory { border: 1px solid #ddd; width: 1170px; margin: 0 auto; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+ border-radius: 4px; 
+}
+#globalfooter #breadory ol#breadcrumbs { background: none; clear: both; float: none; height: 3em; line-height: 3em; font-size: 11px; color: #666; margin: 0; list-style: none; font-weight: bold; text-shadow: 0 1px 0 #fff; }
+#breadory ol#breadcrumbs li { background: none; float: left; margin: 0; padding: 0 0 0 1em; }
+#breadory ol#breadcrumbs li a { float: left; color: #666; text-decoration: none; padding: 0 1.75em 0 0; margin-left: 0px; background: url(https://www.apple.com/global/elements/breadory/breadcrumb_separator.png) no-repeat 100% 50%; }
+#breadory ol#breadcrumbs li a:hover { color: #333; text-decoration: none; }
+#breadory ol#breadcrumbs li.home { background: none; margin: 0; padding: 0; }
+#breadory ol#breadcrumbs li.home a 
+{no-repeat 1.25em 0%; margin: 0; padding: 0 0 0 1.25em; width: 30px; text-indent: -9999px; overflow: hidden; }
+#breadory ol#breadcrumbs li.home a:hover { background-position: 1.25em 100%; }
+
+
+#breadory #directorynav { background: none; clear: both; float: none; margin-top: 0; }
+#breadory #directorynav .capbottom { height: 0; font-size: 1px; _display: none; }
+
+
+
+/* PRINT */
+@media print {
+	body, #main, #content { color: #000 !important; }
+	a, a:link, a:visited { color: #000 !important; text-decoration:none !important; }
+	#tabs, #globalheader, #globalfooter, #directorynav, .noprint, .hide { display: none !important; }
+	#main a.pdf, #main a.html, #main a.qt, #main a.ical, #main a.dl, #main a.dmg, #main a.zip, #main a.keynote, #main a.audio { padding-left: 0 !important; background-image: none !important; }
+}
+
+/* iPhone */
+@media screen and (max-device-width: 480px) { html { -webkit-text-size-adjust: none; } }
+
+
+.videothumb{
+height: 200px;
+line-height: 150px;
+border: 4px solid #F8F5F0;
+cursor: pointer;
+padding: 0;
+background: #FF6600  
+
+}
+
+.videothumb h2 {
+color: #fff;
+background: #666666;
+position: absolute;
+bottom: 0;
+font-size: 13px;
+font-weight: 500;
+margin-bottom: 0;
+width: 100%;
+text-align: left;
+padding: 3px 10px;
+text-transform: uppercase;
+}
