@@ -194,20 +194,19 @@ background: #F2F2F2;
 /* iPhone */
 @media screen and (max-device-width: 480px) { html { -webkit-text-size-adjust: none; } }
 
-
 .videothumb{
 height: 200px;
 line-height: 150px;
 border: 4px solid #F8F5F0;
 cursor: pointer;
 padding: 0;
-background: #FF6600  
+background: #FF6600  ;
 
 }
 
 .videothumb h2 {
 color: #fff;
-background: #666666;
+background: #bd9f86;
 position: absolute;
 bottom: 0;
 font-size: 13px;
